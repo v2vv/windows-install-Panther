@@ -1,14 +1,13 @@
 $GUIforClash_exe = "I:\Programs\GUI.for.Clash-windows-amd64\GUI.for.Clash.exe" # GUI.for.Clash 程序
 $Mihomo_exe = "I:\Programs\GUI.for.Clash-windows-amd64\data\mihomo\mihomo-windows-amd64.exe" # mihomo 内核程序
 
-$winget_package = ".\winget.msixbundle" # winget 安装包
-$microsoftuixaml_package = ".\Microsoft.UI.Xaml.2.8.x64.appx" # Microsoft.UI.Xaml.2.8 安装包
-$chrome_package = ".\googlechromestandaloneenterprise64.msi"  # chrome 安装包
+$winget_package = ".\apps\winget.msixbundle" # winget 安装包
+$microsoftuixaml_package = ".\apps\Microsoft.UI.Xaml.2.8.x64.appx" # Microsoft.UI.Xaml.2.8 安装包
+$chrome_package = ".\apps\googlechromestandaloneenterprise64.msi"  # chrome 安装包
+$activation_script = ".\apps\activation.cmd /HWID" # 数字激活脚本
 
-$activation_script = ".\activation.cmd /HWID" # 数字激活脚本
-$git_config_script = ".\gitconfig" #git 配置脚本
-
-$vscode_config_reg = ".\vscode.reg" # vsocde 右键注册表文件
+$git_config_script = ".\configs\gitconfig" #git 配置脚本
+$vscode_config_reg = ".\configs\vscode.reg" # vsocde 右键注册表文件
 
 
 #Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force # 允许执行自定义脚本
