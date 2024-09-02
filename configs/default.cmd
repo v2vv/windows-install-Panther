@@ -1,24 +1,29 @@
-:: EFI å·ç¬¦
+@echo off
+:: EFI ¾í·û
 set efiDriver=H:
-:: Windows å·ç¬¦
-set imageDriver=L:
-:: wim Image è·¯å¾„
+:: Windows ¾í·û
+set imageDriver=i:
+:: wim Image Â·¾¶
 set wimPath=.\wim\win11-2024-8.wim
-:: é©±åŠ¨ç¨‹åºç›®å½•
-set importDriverPath=.\driver\å¯¼å‡º
-:: æ— äººå€¼å®ˆåº”ç­”è·¯å¾„
+:: Çı¶¯³ÌĞòÄ¿Â¼
+set importDriverPath=.\driver\µ¼³ö
+:: ÎŞÈËÖµÊØÓ¦´ğÂ·¾¶
 set unattendPath=.\Panther\unattend.xml
-:: Microsoft.UI.Xaml.2.8  appx 
+:: Microsoft.UI.Xaml Â·¾¶
 set MicrosoftUIXamlPath=.\appx\Microsoft.UI.Xaml.2.8.x64.appx
-::æ˜¯å¦é‡å»ºå¼•å¯¼æ–‡ä»¶ (0:ä¸é‡å»º 1:é‡å»º)
+::ÊÇ·ñ¸ñÊ½»¯(0:²»¸ñÊ½»¯ 1:¸ñÊ½»¯)
+set format=1
+::ÊÇ·ñ°²×°¾µÏñ (0:²»°²×° 1:°²×°)
+set installImage=1
+::ÊÇ·ñ¸üĞÂÒıµ¼ÎÄ¼ş (0:²»ÖØ½¨ 1:ÖØ½¨)
 set rebuildEFI=1
-::å¼•å¯¼æ–‡ä»¶é‡å»ºæ˜¯å¦ä¿å­˜åŸæœ‰ç³»ç»Ÿå¼•å¯¼ (0:ä¸ä¿ç•™ 1:ä¿ç•™ï¼‰
-set otherBOOT=0 
-:: å®Œæˆåé‡å¯ (0:ä¸é‡å¯ 1:é‡å¯)
+::Òıµ¼ÎÄ¼ş¸üĞÂÊÇ·ñ±£´æÔ­ÓĞÏµÍ³Òıµ¼ (0:²»±£Áô 1:±£Áô£©
+set otherBOOT=0
+:: Íê³ÉºóÖØÆô (0:²»ÖØÆô 1:ÖØÆô)
 set reboot=1
-::æ˜¯å¦æ·»åŠ é©±åŠ¨  (0:ä¸æ·»åŠ  1:æ·»åŠ ) 
-set addDriver=0
-::æ˜¯å¦æ·»åŠ æ— äººå€¼å®ˆ (0:ä¸æ·»åŠ  1:æ·»åŠ ) 
+::ÊÇ·ñÌí¼ÓÇı¶¯  (0:²»Ìí¼Ó 1:Ìí¼Ó) 
+set addDriver=1
+::ÊÇ·ñÌí¼ÓÎŞÈËÖµÊØ (0:²»Ìí¼Ó 1:Ìí¼Ó) 
 set addAttend=1
-::æ˜¯å¦å®‰è£… Microsoft.UI.Xaml.2.8  apx (0:ä¸å®‰è£… 1:å®‰è£…) 
+::ÊÇ·ñ°²×° Microsoft.UI.Xaml.2.8 apx (0:²»°²×° 1:°²×°) 
 set addMicrosoftUIXaml=1
