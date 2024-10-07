@@ -2,9 +2,11 @@
 :: EFI 卷符
 set efiDriver=H:
 :: Windows 卷符
-set imageDriver=i:
+set imageDriver=G:
 :: wim Image 路径
-set wimPath=.\wim\win11-2024-8.wim
+set wimPath=.\wim\win11-2024-10.wim
+::选择安装系统版本索引
+set wimIndex=5
 :: 驱动程序目录
 set importDriverPath=.\driver\导出
 :: 无人值守应答路径

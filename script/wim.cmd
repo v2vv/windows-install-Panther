@@ -5,6 +5,7 @@ echo ------ 安装信息 -----
 echo EFI 引导卷为 %efiDriver%
 echo Windows 安装卷为 %imageDriver%
 echo wim 文件路径为 %wimPath%
+echo 系统版本索引为 %wimIndex%
 echo driver 文件路径为 %importDriverPath%
 echo unattend 文件路径为 %unattendPath%
 echo Microsoft.UI.Xaml.2.8 文件路径为 %MicrosoftUIXamlPath%
@@ -35,7 +36,7 @@ if %format%==1 (
 if %installImage%==1 (
     echo.
     echo --- 3.2. 正在安装镜像到 %imageDriver%---
-    dism /Apply-Image /ImageFile:"%wimPath%" /Index:3 /ApplyDir:%imageDriver%\
+    dism /Apply-Image /ImageFile:"%wimPath%" /Index:%wimIndex% /ApplyDir:%imageDriver%\
 ) else (
     echo.
     echo 跳过安装镜像到镜像盘

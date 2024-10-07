@@ -1,6 +1,7 @@
 # add-git-profile.ps1
 # git 终端配置
-$windowsterminal_exe = "C:\'Program Files'\WindowsApps\Microsoft.WindowsTerminal_1.12.10983.0_x64__8wekyb3d8bbwe\wt.exe"
+# $windowsterminal_exe = "C:\'Program Files'\WindowsApps\Microsoft.WindowsTerminal_1.12.10983.0_x64__8wekyb3d8bbwe\wt.exe"
+$windowsterminal_exe = "wt.exe"
 $windowsterminal_settings = [System.IO.Path]::Combine([System.Environment]::GetFolderPath('LocalApplicationData'), 'Packages', 'Microsoft.WindowsTerminal_8wekyb3d8bbwe', 'LocalState', 'settings.json')
 $git_bash_path = "C:\Program Files\Git\bin\bash.exe"
 $git_bash_icon = "C:\Program Files\Git\mingw64\share\git\git-for-windows.ico"
